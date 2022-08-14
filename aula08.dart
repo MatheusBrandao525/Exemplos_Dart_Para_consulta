@@ -17,3 +17,4 @@ Future<String> getCepByName(String name){ // Future diz a aplicação que uma va
   // simulando chamada em serviço externo
   return Future.value('76935000');
 }
+ 
