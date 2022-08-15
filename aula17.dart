@@ -1,3 +1,4 @@
+
 void main() {
 
   // Exercicios de fixação
@@ -6,7 +7,7 @@ void main() {
   chamandoExercicio.exercicio01(11, 9); // passando os dois numeros por parametros.
   chamandoExercicio.exercicio02(15, 50, 31);
   
-  chamandoExercicio.exercicio03(250);
+  chamandoExercicio.exercicio03(1550);
 }
 
 
@@ -56,13 +57,33 @@ class Exercicios {
   //c. O valor do aumento;
   //d. O novo salário, após o aumento.  
 
-  void exercicio03(int salario){
+  void exercicio03(double salario){
 
     if(salario <= 280){
+      
       print('Salario inicial: $salario');
-      salario = salario + 20%;
+      salario = salario + (salario * 20/100);
       print('Salario após aumento: $salario');
+      
+    }else if(salario >280 && salario <= 700){
+      
+      print('Salario inicial: $salario');
+      salario = salario + (salario * 15/100);
+      print('Salario após aumento: $salario');
+      
+    }else if(salario >700 && salario <=1500){
+      
+      print('Salario inicial: $salario');
+      salario = salario + (salario * 10/100);
+      print('Salario após aumento: $salario');
+      
+    }else if(salario > 1500){
+      
+      print('Salario inicial: $salario');
+      salario = salario + (salario * 5/100);
+      print('Salario após aumento: $salario');
+      
     }
   }
-}
 
+}
